@@ -1,28 +1,84 @@
 <a id="portfolio" class="smooth"></a>
-<h2>Portfolio</h2>
-Portfolio page content goes here.
+<h2 class="text-center">Portfolio</h2>
 
-<ul class="nav nav-pills nav-justified">
-  <li class="active"><a data-toggle="pill" href="#project1">Project 1</a></li>
-  <li><a data-toggle="pill" href="#project2">Project 2</a></li>
-  <li><a data-toggle="pill" href="#project3">Project 3</a></li>
-  <li><a data-toggle="pill" href="#project4">Project 4</a></li>
+<ul class="nav nav-tabs nav-justified">
+  <li class="active project1-tab"><a data-toggle="tab" href="#project1">Project 1</a></li>
+  <li class="project2-tab"><a data-toggle="tab" href="#project2">Project 2</a></li>
+  <li class="project3-tab"><a data-toggle="tab" href="#project3">Project 3</a></li>
+  <li class="project4-tab"><a data-toggle="tab" href="#project4">Project 4</a></li>
 </ul>
 
 <div class="tab-content">
-  <div id="project1" class="tab-pane fade in active">
-    <h3>Project 1</h3>
-    <p>Some content in menu 1.</p>
+  <div id="project1" class="tab-pane fade in active project1-tab tab-customisation">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-6 project-screenshot">
+          <img class="img-responsive" src="./images/project-1.png" alt="Project 1 - Battleship">
+        </div>
+        <div class="col-xs-12 col-sm-6">
+          <div class="project-header">
+            <h2>WDI Project 1 - <span>Create a game in the browser</span></h2>
+          </div>
+          <h3 class="project-name">Battleship</h3>
+          <p>Battleship is a popular turn based game where the aim of the game is to sink your opponent's ships before they sink yours. In this version of Battleship, you'll play against the computer and your ships will be randomly placed for you at the start of the game.</p>
+          <p class="list-heading">The game's code can be split into 4 sections:</p>
+          <ol>
+            <li>Creating the grids</li>
+            <li>Placing the ships on the grids</li>
+            <li>The battle system</li>
+            <li>The AI</li>
+          </ol>
+          <p class="list-heading">Tech used</p>
+          <ul>
+            <li>HTML/CSS</li>
+            <li>JavaScript/jQuery</li>
+          </ul>
+          <p><span class="project-link-title">Github: </span>
+            <a target="_blank" href="https://github.com/laseq/wdi-project-1">https://github.com/laseq/wdi-project-1</a>
+          </p>
+          <p><span class="project-link-title">Project: </span>
+            <a target="_blank" href="https://protected-waters-78340.herokuapp.com">https://protected-waters-78340.herokuapp.com</a>
+          </p>
+        </div>
+      </div>
+    </div>
   </div>
-  <div id="project2" class="tab-pane fade">
-    <h3>Project 2</h3>
-    <p>Some content in menu 2.</p>
+  <div id="project2" class="tab-pane fade project2-tab tab-customisation">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-6 project-screenshot">
+          <img class="img-responsive" src="./images/project-2.png" alt="Project 2 - Kanji Kaigou">
+        </div>
+        <div class="col-xs-12 col-sm-6">
+          <div class="project-header">
+            <h2>WDI Project 2 - <span>A Full Stack RESTful application</span></h2>
+          </div>
+          <h3 class="project-name">Kanji Kaigou</h3>
+          <p>My project of choice was a web app to enable learners of Japanese to improve their Kanji (Japanese symbol) competence. As a learner of the Japanese language I felt that it would be an exciting project to embark on. Such an app would fulfil the project requirements with RESTful routes and include some logic for lesson reviews.</p>
+          <p class="list-heading">Tech used</p>
+          <ul>
+            <li>Express.js</li>
+            <li>Node.js</li>
+            <li>MongoDB & Mongoose</li>
+            <li>BCrypt</li>
+            <li>HTML/CSS/SCSS</li>
+            <li>JavaScript/jQuery</li>
+          </ul>
+          <p><span class="project-link-title">Github: </span>
+            <a target="_blank" href="https://github.com/laseq/wdi-project-2">https://github.com/laseq/wdi-project-2</a>
+          </p>
+          <p><span class="project-link-title">Project: </span>
+            <a target="_blank" href="https://whispering-harbor-84338.herokuapp.com">https://whispering-harbor-84338.herokuapp.com</a>
+          </p>
+        </div>
+      </div>
+    </div>
   </div>
-  <div id="project3" class="tab-pane fade">
+  <div id="project3" class="tab-pane fade project3-tab tab-customisation">
     <h3>Project 3</h3>
     <p>Some content in menu 3.</p>
   </div>
-  <div id="project4" class="tab-pane fade">
+  <div id="project4" class="tab-pane fade project4-tab tab-customisation">
     <h3>Project 4</h3>
     <p>Some content in menu 4.</p>
   </div>

@@ -1,0 +1,111 @@
+$project1-tab-colour: yellow;
+$project2-tab-colour: red;
+$project3-tab-colour: aqua;
+$project4-tab-colour: pink;
+
+.project1-tab {
+  background-color: $project1-tab-colour;
+  &.active a {
+    background-color: $project1-tab-colour;
+    border-color: $project1-tab-colour;
+  }
+}
+.nav-tabs.nav-justified>.project1-tab>a {
+    border-color: $project1-tab-colour;
+}
+.nav>.project1-tab>a:focus, .nav>.project1-tab>a:hover {
+    background-color: $project1-tab-colour;
+}
+
+.project2-tab {
+  background-color: $project2-tab-colour;
+  &.active a{
+    background-color: $project2-tab-colour;
+  }
+}
+.nav-tabs.nav-justified>.project2-tab>a {
+    border-color: $project2-tab-colour;
+}
+.nav>.project2-tab>a:focus, .nav>.project2-tab>a:hover {
+    background-color: $project2-tab-colour;
+}
+
+.project3-tab {
+  background-color: $project3-tab-colour;
+  &.active a{
+    background-color: $project3-tab-colour;
+  }
+}
+.nav-tabs.nav-justified>.project3-tab>a {
+    border-color: $project3-tab-colour;
+}
+.nav>.project3-tab>a:focus, .nav>.project3-tab>a:hover {
+    background-color: $project3-tab-colour;
+}
+
+.project4-tab {
+  background-color: $project4-tab-colour;
+  &.active a{
+    background-color: $project4-tab-colour;
+  }
+}
+.nav-tabs.nav-justified>.project4-tab>a {
+    border-color: $project4-tab-colour;
+}
+.nav>.project4-tab>a:focus, .nav>.project4-tab>a:hover {
+    background-color: $project4-tab-colour;
+}
+
+.nav-tabs>.project1-tab.active>a, .nav-tabs>.project1-tab.active>a:focus, .nav-tabs>.project1-tab.active>a:hover {
+    background-color: $project1-tab-colour;
+    border-color: $project1-tab-colour;
+}
+.nav-tabs>.project2-tab.active>a, .nav-tabs>.project2-tab.active>a:focus, .nav-tabs>.project2-tab.active>a:hover {
+    background-color: $project2-tab-colour;
+    border-color: $project2-tab-colour;
+}
+.nav-tabs>.project3-tab.active>a, .nav-tabs>.project3-tab.active>a:focus, .nav-tabs>.project3-tab.active>a:hover {
+    background-color: $project3-tab-colour;
+    border-color: $project3-tab-colour;
+}
+.nav-tabs>.project2-tab.active>a, .nav-tabs>.project4-tab.active>a:focus, .nav-tabs>.project4-tab.active>a:hover {
+    background-color: $project4-tab-colour;
+    border-color: $project4-tab-colour;
+}
+
+.tab-customisation {
+  .row {
+    padding-top: 2em;
+    padding-bottom: 1.5em;
+  }
+  .project-screenshot {
+    margin-top: 0.1em;
+    margin-bottom: 1.5em;
+    img {
+      border: 1em solid white;
+    }
+  }
+  .project-header {
+    margin-top: 0em;
+    margin-bottom: 0.5em;
+    h2 {
+      margin-top: 0;
+      margin-bottom: 0;
+      line-height: 1em;
+    }
+    span {
+      font-size: 0.7em;
+    }
+  }
+  .project-name {
+    margin-top: 0.1em;
+    margin-bottom: 0.3em;
+  }
+  .list-heading {
+    font-weight: 600;
+    margin-bottom: 0.3em;
+  }
+  .project-link-title {
+    font-weight: 600;
+  }
+}
