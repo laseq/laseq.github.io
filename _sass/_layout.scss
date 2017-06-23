@@ -68,11 +68,16 @@ aside {
 	position: fixed;
 	top: 0;
 	left: 0;
-	background: #fff;
+	// background: #fff;
 	width: 100%;
 	z-index: 2;
-	border-bottom: 1px solid lighten($light, 30%);
+	// border-bottom: 1px solid lighten($light, 30%);
 	box-shadow: 0px 1px 1px RGBA(4, 25, 54, .1);
+
+  .navbar {
+    border-radius: 0;
+    margin-bottom: 0;
+  }
 	// nav {
 	// 	float: left;
 	// 	max-width: 800px;
