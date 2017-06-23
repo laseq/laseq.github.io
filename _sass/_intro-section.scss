@@ -1,0 +1,39 @@
+#page1 {
+  .content-wrapper {
+    height: 95vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    // align-items: center;
+
+    .second-content-wrapper {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      // align-items: center;
+      height: 95vh;
+
+      .intro-content {
+        text-align: center;
+
+        #intro-my-name, #intro-my-position {
+          margin-top: 0;
+          margin-bottom: 0;
+        }
+
+        #intro-my-name {
+
+        }
+        #intro-my-position {
+
+        }
+      }
+
+      .scroll-prompt {
+        text-align: center;
+      }
+    }
+
+
+  }
+}

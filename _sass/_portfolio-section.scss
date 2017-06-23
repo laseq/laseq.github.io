@@ -18,6 +18,9 @@ $active-border-colour: white;
 
 .project-tabs {
   background-color: $projects-tab-colour;
+  a {
+    text-decoration: none;
+  }
   &.active a {
     background-color: $active-project-colour;
     border-color: $active-project-colour;
