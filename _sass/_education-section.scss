@@ -1,0 +1,27 @@
+#page-education {
+  .content-wrapper {
+    height: 98vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    .second-content-wrapper {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 98vh;
+
+      .education-content {
+        text-align: center;
+
+        #education-text {
+          margin-top: 0;
+          margin-bottom: 0;
+        }
+      }
+      .scroll-prompt {
+        text-align: center;
+      }
+    }
+  }
+}

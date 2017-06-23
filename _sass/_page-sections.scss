@@ -1,4 +1,4 @@
-#page-home, #page-portfolio, #page-skills, #page-contact {
+#page-home, #page-education, #page-skills, #page-portfolio, #page-contact {
   // min-height: 800px;
   min-height: 100vh;
 }
@@ -6,12 +6,15 @@
 #page-home {
   background-color: beige;
 }
-#page-portfolio {
+#page-education {
   background-color: beige;
-  padding: 0 1.5em 1.5em 1.5em;
 }
 #page-skills {
   background-color: beige;
+}
+#page-portfolio {
+  background-color: beige;
+  padding: 0 1.5em 1.5em 1.5em;
 }
 #page-contact {
   background-color: purple;
