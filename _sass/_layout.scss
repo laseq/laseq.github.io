@@ -78,6 +78,10 @@ aside {
   .navbar {
     border-radius: 0;
     margin-bottom: 0;
+
+    a {
+      text-decoration: none;
+    }
   }
 	// nav {
 	// 	float: left;
@@ -116,5 +120,5 @@ aside {
 }
 footer {
 	text-align: center;
-	padding: 40px;
+	padding: 10px;
 }

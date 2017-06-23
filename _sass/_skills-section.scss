@@ -115,3 +115,19 @@
     }
   }
 }
+
+@media (min-width: 992px) {
+  #page-skills {
+    .skills-container {
+      h3 {
+        font-size: 1.6em;
+      }
+      p {
+        font-size: 1.2em;
+      }
+      li {
+        font-size: 1.2em;
+      }
+    }
+  }
+}
