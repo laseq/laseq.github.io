@@ -1,6 +1,6 @@
-#page1 {
+#page-home {
   .content-wrapper {
-    height: 95vh;
+    height: 98vh;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -11,7 +11,7 @@
       flex-direction: column;
       justify-content: space-between;
       // align-items: center;
-      height: 95vh;
+      height: 98vh;
 
       .intro-content {
         text-align: center;
