@@ -38,6 +38,7 @@ a:visited {
 a:hover {
 	// color: $link-hover-color;
 	text-decoration: underline;
+  cursor: pointer;
 }
 header {
 	background: $header;

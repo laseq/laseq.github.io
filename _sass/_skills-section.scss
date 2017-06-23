@@ -1,6 +1,6 @@
-#skills {
+#page-skills {
   .content-wrapper {
-    height: 98vh;
+    min-height: 98vh;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -8,10 +8,18 @@
     .second-content-wrapper {
       display: flex;
       flex-direction: column;
-      justify-content: space-between;
-      height: 98vh;
+      justify-content: space-around;
+      min-height: 98vh;
+
+      .skills-blurb {
+        text-align: center;
+      }
+
+      .scroll-prompt {
+        text-align: center;
+      }
     }
-    
+
   }
 }
 
