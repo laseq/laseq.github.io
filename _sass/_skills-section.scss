@@ -1,4 +1,9 @@
 .skills-container {
+  word-break: break-all;
+  -webkit-hyphens: auto;
+   -moz-hyphens: auto;
+        hyphens: auto;
+
   #front-end-column {
     border-right: 1px solid grey;
     border-left: 1px solid grey;
