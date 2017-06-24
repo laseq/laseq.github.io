@@ -25,7 +25,7 @@ $(document).ready(function() {
 
   $('body').scrollspy({
     target: '#myNavbar',
-    offset: navbarHeight
+    offset: navbarHeight+5
   });
 
   // Code for smooth scrolling to section
