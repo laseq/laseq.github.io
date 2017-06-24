@@ -1,18 +1,43 @@
 $(document).ready(function() {
   console.log('Loaded');
 
-  var navbarHeight = $('#myNavbar').height();
+  const navbarHeight = $('#myNavbar').height();
+
+  calculatePortfolioCardHeight();
+
+  $(window).resize(function() {
+    calculatePortfolioCardHeight();
+  });
+
+  // Setting the height of the portfolio card so that
+  // it doesn't change dynamically when clicking on different projects
+  function calculatePortfolioCardHeight() {
+    const projectHeights = [];
+    projectHeights[0] = $('#project1').height();
+    projectHeights[1] = $('#project2').height();
+    projectHeights[2] = $('#project3').height();
+    projectHeights[3] = $('#project4').height();
+    const biggestHeight = Math.max(...projectHeights);
+
+    var portfolioCardHeight = $('#portfolioNavTabs').height() + biggestHeight;
+    $('#portfolioCard').height(portfolioCardHeight);
+  }
 
   $('body').scrollspy({
     target: '#myNavbar',
     offset: navbarHeight
   });
 
+  // Code for smooth scrolling to section
   // Select all links with hashes
   $('a[href*="#"]')
   // Remove links that don't actually link to anything
   .not('[href="#"]')
   .not('[href="#0"]')
+  .not('[href="#project1"]')
+  .not('[href="#project2"]')
+  .not('[href="#project3"]')
+  .not('[href="#project4"]')
   .click(function(event) {
     // On-page links
     if (
@@ -46,16 +71,3 @@ $(document).ready(function() {
   });
 
 });
-
-// //jQuery for page scrolling feature - requires jQuery Easing plugin
-// $(function() {
-//   console.log('entered the second function');
-//   $(document).on('click', 'a.page-scroll', function(event) {
-//     console.log('entered the second document');
-//     var $anchor = $(this);
-//     $('html, body').stop().animate({
-//       scrollTop: $($anchor.attr('href')).offset().top
-//     }, 1500, 'easeInOutExpo');
-//     event.preventDefault();
-//   });
-// });
