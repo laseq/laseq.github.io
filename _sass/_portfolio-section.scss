@@ -179,7 +179,7 @@ $active-border-colour: $theme-color-5;
       margin-bottom: 0.5em;
       h2 {
         margin-top: 0;
-        margin-bottom: 0.5em;
+        margin-bottom: 0.6em;
         line-height: 1em;
       }
       span {
@@ -188,7 +188,11 @@ $active-border-colour: $theme-color-5;
     }
     .project-name {
       margin-top: 0.1em;
-      margin-bottom: 0.3em;
+      margin-bottom: 0.4em;
+    }
+    .project-title-span {
+      padding-bottom: 0.2em;
+      border-bottom: 3px solid $theme-color-3;
     }
     .list-heading {
       font-weight: 600;
