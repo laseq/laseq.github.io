@@ -50,14 +50,19 @@ $active-border-colour: $theme-color-5;
   }
   &.active a {
     background-color: $active-project-colour;
-    border-color: $active-project-colour;
+    border-color: $active-border-colour;
   }
 }
-// .nav-tabs.nav-justified>.project-tabs>a {
-//   border-color: $portfolio-border-colour;
-// }
-.nav>.projects-tabs>a:focus, .nav>.projects-tabs>a:hover {
+.nav>li>a:hover {
     background-color: $active-project-colour;
+    opacity: 0.9;
+}
+.nav>li.active>a:hover {
+  opacity: 1;
+}
+
+.nav>.projects-tabs>a:hover {
+  background-color: $active-project-colour;
 }
 .nav-tabs.nav-justified > .project-tabs > a {
   border: none;
@@ -65,13 +70,8 @@ $active-border-colour: $theme-color-5;
 .nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
     background-color: $projects-tab-colour;
     border: 1px solid $portfolio-border-colour;
-    // background-color: #fff;
-    // border: 1px solid #fff;
 }
-.nav>li>a:focus, .nav>li>a:hover {
-    background-color: $active-project-colour;
-    opacity: 0.9;
-}
+
 .nav-tabs.nav-justified>.active>a, .nav-tabs.nav-justified>.active>a:focus, .nav-tabs.nav-justified>.active>a:hover {
     border: none;
 }
