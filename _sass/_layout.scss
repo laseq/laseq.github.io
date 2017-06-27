@@ -121,5 +121,8 @@ aside {
 }
 footer {
 	text-align: center;
-	padding: 10px;
+	padding-top: 5px;
+  padding-bottom: 1px;
+  background-color: $theme-color-1;
+  color: $theme-color-5;
 }

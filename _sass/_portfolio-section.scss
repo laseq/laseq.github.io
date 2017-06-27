@@ -26,22 +26,22 @@
 }
 
 @mixin medium-card-container {
-  background: #fff;
   box-shadow: 0px 1px 10px 0px rgba(207,207,207,1);
   transition: all 0.5s ease;
   // padding: 1em;
   // margin-bottom: 0.5em;
   position: relative;
+  background-color: $theme-color-5;
 }
 
-$projects-tab-colour: rgba(207,207,207,1);
+$projects-tab-colour: $theme-color-3;
 // $project1-tab-colour: rgba(207,207,207,1);
 // $project2-tab-colour: rgba(207,207,207,1);
 // $project3-tab-colour: rgba(207,207,207,1);
 // $project4-tab-colour: rgba(207,207,207,1);
-$active-project-colour: white;
-$portfolio-border-colour: rgba(207,207,207,1);
-$active-border-colour: white;
+$active-project-colour: $theme-color-5;
+$portfolio-border-colour: $theme-color-3;
+$active-border-colour: $theme-color-5;
 
 .project-tabs {
   background-color: $projects-tab-colour;
@@ -63,8 +63,14 @@ $active-border-colour: white;
   border: none;
 }
 .nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
-    background-color: #fff;
-    border: 1px solid #fff;
+    background-color: $projects-tab-colour;
+    border: 1px solid $portfolio-border-colour;
+    // background-color: #fff;
+    // border: 1px solid #fff;
+}
+.nav>li>a:focus, .nav>li>a:hover {
+    background-color: $active-project-colour;
+    opacity: 0.9;
 }
 .nav-tabs.nav-justified>.active>a, .nav-tabs.nav-justified>.active>a:focus, .nav-tabs.nav-justified>.active>a:hover {
     border: none;
@@ -165,7 +171,7 @@ $active-border-colour: white;
       margin-top: 0em;
       margin-bottom: 1.5em;
       img {
-        border: 1em solid beige;
+        border: 0.8em solid #fff;
       }
     }
     .project-header {
