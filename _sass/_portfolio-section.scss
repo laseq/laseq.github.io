@@ -201,5 +201,15 @@ $active-border-colour: $theme-color-5;
     .project-link-title {
       font-weight: 600;
     }
+    ul {
+      padding-left: 0;
+      li {
+        display: inline-block;
+        padding: 0.7em 1em 0.7em;
+        margin-bottom: 0.5em;
+        background-color: $theme-color-3;
+        font-size: 0.9em;
+      }
+    }
   }
 }
