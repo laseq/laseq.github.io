@@ -25,10 +25,14 @@
           transition: all .2s ease-in-out;
 
           &:hover {
-            opacity: 0.8;
+            opacity: 0.9;
             transform: scale(1.1);
+            // -webkit-animation:spin 4s linear infinite;
+            // animation: spin 4s linear infinite;
           }
         }
+        // @-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+        // @keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
       }
       .scroll-prompt {
         text-align: center;

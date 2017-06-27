@@ -8,8 +8,15 @@ $dropDown       : false;
   border-color: $bgDefault;
   .navbar-brand {
     color: $colDefault;
+    padding: 5px;
     &:hover, &:focus {
-      color: $colHighlight; }}
+      color: $colHighlight;
+    }
+    img {
+      height: 100%;
+    }
+  }
+
   .navbar-text {
     color: $colDefault; }
   .navbar-nav {
