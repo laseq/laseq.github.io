@@ -1,15 +1,28 @@
 // Variables, mixins, and resets will go here.
 
+$theme-color-1: #30343F;
+$theme-color-2: #004BA8;
+$theme-color-3: #2E86AB;
+$theme-color-4: #A0C1D1;
+$theme-color-5: #DADFF7;
+
 $content-width: 800px;
 $main: #19CCAA;
 $font-style: 'Open Sans', sans-serif;
-$font-color: #262626;
-$link-color: #425469;
-$link-hover-color: $main;
+// $font-color: #262626;
+// $link-color: #425469;
+// $link-hover-color: $main;
 $heading-font: 'Muli', sans-serif;
-$heading-font-color: #425469;
-$light: #E7EDF4;
-$header:  #1D1425;
+// $heading-font-color: #425469;
+// $light: #E7EDF4;
+// $header:  #1D1425;
+
+$font-color: $theme-color-1;
+$link-color: $theme-color-1;
+$link-hover-color: $theme-color-2;
+$heading-font-color: $theme-color-1;
+$light: $theme-color-5;
+$header:  $theme-color-1;
 
 *,
 *::before,
