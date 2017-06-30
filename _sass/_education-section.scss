@@ -1,9 +1,13 @@
 #page-education {
   .content-wrapper {
-    height: 98vh;
+    height: 100vh;
     width: 100%;
-    display: flex;
+    // display: flex;
+    display: block;
+    position: relative;
     justify-content: center;
+    // background: url('../images/education-image-1.jpg') no-repeat fixed center;
+    // background-size: auto 100%;
 
     .second-content-wrapper {
       display: flex;
@@ -13,6 +17,9 @@
 
       .education-content {
         text-align: center;
+        width: 100vw;
+        background-color: rgba(255,255,255,0.5);
+        padding: 3em;
 
         #education-text {
           margin-top: 0;
@@ -39,4 +46,18 @@
       }
     }
   }
+
+  .content-wrapper::after {
+    content: "";
+    background: url('../images/education-image-1.jpg') no-repeat fixed right;
+    background-size: cover;
+    opacity: 0.8;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+  }
+
 }
