@@ -2,6 +2,7 @@ $(document).ready(function() {
   console.log('Loaded');
 
   const navbarHeight = $('#myNavbar').height();
+  console.log('navbarHeight:', navbarHeight);
 
   calculatePortfolioCardHeight();
 
@@ -17,9 +18,14 @@ $(document).ready(function() {
     projectHeights[1] = $('#project2').height();
     projectHeights[2] = $('#project3').height();
     projectHeights[3] = $('#project4').height();
+    for (let i=0; i<4; i++) {
+      console.log(`projectHeights[${i}]:`, projectHeights[i]);
+    }
     const biggestHeight = Math.max(...projectHeights);
 
     var portfolioCardHeight = $('#portfolioNavTabs').height() + biggestHeight;
+    console.log('biggestHeight:', biggestHeight);
+    console.log('portfolioCardHeight:', portfolioCardHeight);
     $('#portfolioCard').height(portfolioCardHeight);
   }
 
@@ -69,5 +75,11 @@ $(document).ready(function() {
       }
     }
   });
+
+  // Calling the function after a few seconds because the portfolio size
+  // gets messed up on Safari otherwise
+  setTimeout( function(){
+    calculatePortfolioCardHeight();
+  }, 3000 );
 
 });
